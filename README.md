@@ -45,7 +45,6 @@ void draw() {
   clear();
   noStroke();
   directionalLight(map(sin(radians(rr)), -1, 1, 0, 255), map(sin(radians(gg)), -1, 1, 0, 255), map(sin(radians(bb)), -1, 1, 0, 255), sin(radians(rr)), sin(radians(gg)), sin(radians(bb)));
-  // ambientLight(255-rr, 255-gg, 255-bb);
   for (int i=0; i<q; i++) {
     pushMatrix();
     translate(xx[i], yy[i], zz[i]);
